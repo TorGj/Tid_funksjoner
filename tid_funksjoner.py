@@ -17,8 +17,10 @@ print('År:',y.year,
       'Ukedag:', y.strftime("%A"),
       'Måned:' , y.strftime("%B"),
       'Uke nr:', y.strftime("%W"),
-      'Dag nr:', y.strftime("%j")) 
+      'Dag nr:', y.strftime("%j"))
 
+print((y.strftime("%Y%m%d%00000")))
+      
 z = dt.timedelta(days = 1, hours= 2, minutes=3, seconds=4)
-print('Nå + tidsforskjell:',y+z)
+
 
